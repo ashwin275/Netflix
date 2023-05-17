@@ -20,7 +20,7 @@ function Rowposts(props) {
       .catch(err => {
         alert('Network Error');
       });
-  }, []);
+  }, [props.url]);
   
 
 
@@ -56,7 +56,7 @@ function Rowposts(props) {
          <div className="posters">
           {
             movies.map((obj) => 
-              <img onClick={()=>handleMovie(obj.id)} className={props.isSmall?'smallposter':'postimage'} src={`${imageUrl+obj.backdrop_path}`} />
+              <img  key={obj.id} onClick={()=>handleMovie(obj.id)} className={props.isSmall?'smallposter':'postimage'} src={`${imageUrl+obj.backdrop_path}`} alt='images'/>
 
             )
           }

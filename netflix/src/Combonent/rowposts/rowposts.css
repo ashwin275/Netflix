@@ -19,17 +19,21 @@
     max-height: 250px;
     margin-right: 10px;
     cursor: pointer;
+    transition: transform 450ms;
 }
 .smallposter{
     max-height: 150px;
     margin-right: 10px;
     cursor: pointer;
+    transition: transform 500ms;
     
 }
 
 .postimage:hover{
-    transform: scale(1.08);
+ 
+    transform: scale(1.09);
 }
 .smallposter:hover{
+    
     transform: scale(1.2);
 }
